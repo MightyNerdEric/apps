@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="OpenShift Container Storage" href="../../ocs/README.html" />
+    <link rel="next" title="OpenShift Data Foundation" href="../../odf/README.html" />
     <link rel="prev" title="Thanos Programmatic Access" href="../thanos/thanos_programmatic_access.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -121,28 +121,11 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../about/README.html">
-   About
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../about/intro.html">
-     Getting started with Operate First
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../acm/README.html">
    ACM
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -168,8 +151,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../../acme/README.html">
    ACME
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -185,8 +168,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../../argocd-gitops/README.html">
    ArgoCD
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -252,24 +235,34 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../../vault_eso/README.html">
    Secret Management
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../vault_eso/add_cluster_to_eso_and_vault.html">
+    <a class="reference internal" href="../../vault_eso/onboard_team_to_vault.html">
+     Onboard an OCP group to vault
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vault_eso/create_external_secret.html">
+     Create External Secret in Operate First
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vault_eso/enable_es_in_namespace.html">
+     Enable External Secrets to a namespace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vault_eso/enable_cluster_to_eso_and_vault.html">
      Enable Cluster to use External Secrets with Vault
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../vault_eso/add_external_secrets_to_ns.html">
-     Add External Secrets to a namespace
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../vault_eso/add_eso_to_cluster.html">
+    <a class="reference internal" href="../../vault_eso/install_es_operator_in_cluster.html">
      Add External Secrets Operator to an OPF cluster
     </a>
    </li>
@@ -284,6 +277,16 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../../vault_eso/write_to_vault_with_k8s.html">
+     Secret creation using vault CLI and k8s auth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../vault_eso/unsealing_vault.html">
+     Unsealing OPF Vault instance
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../../vault_eso/runbook.html">
      Vault Runbook
     </a>
@@ -294,8 +297,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../../cluster-scope/README.html">
    Cluster Management
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -313,6 +316,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../../cluster-scope/add_user_to_group.html">
      Adding User to an OCP team
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../cluster-scope/add_user_to_project_admin.html">
+     Giving a user project role access in the smaug cluster
     </a>
    </li>
    <li class="toctree-l2">
@@ -334,8 +342,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../../cluster-scope/runbooks/runbook.html">
      Runbooks
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -358,8 +366,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../../development/README.html">
    Development
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -380,8 +388,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../../kafka/README.html">
    Kafka
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -404,7 +412,24 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../grafana/README.html">
+  <a class="reference internal" href="../../kubeval/README.html">
+   Kubeval validation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../kubeval/updating_schema_store.html">
+     Updating schemas in schema store
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../grafana/docs/README.html">
    Grafana
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
@@ -414,12 +439,12 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../grafana/add_grafana_dashboard.html">
+    <a class="reference internal" href="../../grafana/docs/add_grafana_dashboard.html">
      Add a Grafana dashboard to OperateFirst Grafana
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../grafana/map_groups_to_roles.html">
+    <a class="reference internal" href="../../grafana/docs/map_groups_to_roles.html">
      Adding permissions in Grafana
     </a>
    </li>
@@ -443,6 +468,16 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../loki/README.html">
      Loki
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../loki/add_loki_grafana_datasource.html">
+     Add a Loki Data Source in OperateFirst Grafana
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../loki/loki_query_api.html">
+     Loki Query API
     </a>
    </li>
    <li class="toctree-l2">
@@ -473,8 +508,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../ocs/README.html">
-   OpenShift Container Storage
+  <a class="reference internal" href="../../odf/README.html">
+   OpenShift Data Foundation
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
   <label for="toctree-checkbox-12">
@@ -483,18 +518,18 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ocs/buckets-external-access.html">
+    <a class="reference internal" href="../../odf/buckets-external-access.html">
      Accessing buckets from outside the cluster
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ocs/claiming_object_store.html">
+    <a class="reference internal" href="../../odf/claiming_object_store.html">
      Claiming S3-compatible object store buckets
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ocs/runbook.html">
-     OpenShift Container Storage (OCS) Runbook
+    <a class="reference internal" href="../../odf/runbook.html">
+     OpenShift Data Foundation (ODF) Runbook
     </a>
    </li>
   </ul>
@@ -555,6 +590,11 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../odh/seldon/README.html">
+     Seldon Operator
+    </a>
    </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../odh/superset/README.html">
@@ -965,7 +1005,7 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="vector-on-operate-first">
 <h1>Vector on Operate First<a class="headerlink" href="#vector-on-operate-first" title="Permalink to this headline">#</a></h1>
 <p>We deploy and manage instances of <a class="reference external" href="https://github.com/vectordotdev/vector">Vector</a> on the Operate First <code class="docutils literal notranslate"><span class="pre">Smaug</span></code> cluster.</p>
-<p>Currently we use Vector for forwarding <a class="reference external" href="https://docs.openshift.com/container-platform/4.9/logging/cluster-logging-external.html">CLO</a> logs from our <span class="xref myst">Kafka instance</span> to our <a class="reference internal" href="../loki/README.html"><span class="doc std std-doc">Loki</span></a> instance.</p>
+<p>Currently we use Vector for forwarding <a class="reference external" href="https://docs.openshift.com/container-platform/4.9/logging/cluster-logging-external.html">CLO</a> logs from our <a class="reference internal" href="../../kafka/README.html"><span class="doc std std-doc">Kafka instance</span></a> to our <a class="reference internal" href="../loki/README.html"><span class="doc std std-doc">Loki</span></a> instance.</p>
 <p>You can find our Vector configurations <a class="reference external" href="https://github.com/operate-first/apps/tree/master/observatorium/overlays/moc/smaug/vector/smaug/configmap.yaml">here</a>. If you would like to make use of this instance, you can submit a PR with an edit to this configuration.</p>
 </section>
 
@@ -1003,10 +1043,10 @@ title="Print to PDF"
             <p class="prev-next-title">Thanos Programmatic Access</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../ocs/README.html" title="next page">
+    <a class='right-next' id="next-link" href="../../odf/README.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">OpenShift Container Storage</p>
+        <p class="prev-next-title">OpenShift Data Foundation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

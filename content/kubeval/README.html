@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Add External Secrets to a namespace &#8212; GitOps Docs</title>
+    <title>Kubeval validation &#8212; GitOps Docs</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Add External Secrets Operator to an OPF cluster" href="add_eso_to_cluster.html" />
-    <link rel="prev" title="Enable Cluster to use External Secrets with Vault" href="add_cluster_to_eso_and_vault.html" />
+    <link rel="next" title="Updating schemas in schema store" href="updating_schema_store.html" />
+    <link rel="prev" title="Kafka Runbook" href="../kafka/runbook.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -121,28 +121,11 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../about/README.html">
-   About
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../about/intro.html">
-     Getting started with Operate First
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
   <a class="reference internal" href="../acm/README.html">
    ACM
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -168,8 +151,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../acme/README.html">
    ACME
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -185,8 +168,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../argocd-gitops/README.html">
    ArgoCD
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -248,43 +231,63 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="README.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../vault_eso/README.html">
    Secret Management
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="add_cluster_to_eso_and_vault.html">
+    <a class="reference internal" href="../vault_eso/onboard_team_to_vault.html">
+     Onboard an OCP group to vault
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vault_eso/create_external_secret.html">
+     Create External Secret in Operate First
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vault_eso/enable_es_in_namespace.html">
+     Enable External Secrets to a namespace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vault_eso/enable_cluster_to_eso_and_vault.html">
      Enable Cluster to use External Secrets with Vault
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Add External Secrets to a namespace
-    </a>
-   </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="add_eso_to_cluster.html">
+    <a class="reference internal" href="../vault_eso/install_es_operator_in_cluster.html">
      Add External Secrets Operator to an OPF cluster
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="restore_vault.html">
+    <a class="reference internal" href="../vault_eso/restore_vault.html">
      Restoring vault
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="vault_backup_job.html">
+    <a class="reference internal" href="../vault_eso/vault_backup_job.html">
      Vault Backup Job
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="runbook.html">
+    <a class="reference internal" href="../vault_eso/write_to_vault_with_k8s.html">
+     Secret creation using vault CLI and k8s auth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vault_eso/unsealing_vault.html">
+     Unsealing OPF Vault instance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vault_eso/runbook.html">
      Vault Runbook
     </a>
    </li>
@@ -294,8 +297,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../cluster-scope/README.html">
    Cluster Management
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -313,6 +316,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../cluster-scope/add_user_to_group.html">
      Adding User to an OCP team
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cluster-scope/add_user_to_project_admin.html">
+     Giving a user project role access in the smaug cluster
     </a>
    </li>
    <li class="toctree-l2">
@@ -334,8 +342,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../cluster-scope/runbooks/runbook.html">
      Runbooks
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -358,8 +366,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../development/README.html">
    Development
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -380,8 +388,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../kafka/README.html">
    Kafka
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -403,8 +411,25 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Kubeval validation
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="updating_schema_store.html">
+     Updating schemas in schema store
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../grafana/README.html">
+  <a class="reference internal" href="../grafana/docs/README.html">
    Grafana
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
@@ -414,12 +439,12 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../grafana/add_grafana_dashboard.html">
+    <a class="reference internal" href="../grafana/docs/add_grafana_dashboard.html">
      Add a Grafana dashboard to OperateFirst Grafana
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../grafana/map_groups_to_roles.html">
+    <a class="reference internal" href="../grafana/docs/map_groups_to_roles.html">
      Adding permissions in Grafana
     </a>
    </li>
@@ -443,6 +468,16 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../observatorium/loki/README.html">
      Loki
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../observatorium/loki/add_loki_grafana_datasource.html">
+     Add a Loki Data Source in OperateFirst Grafana
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../observatorium/loki/loki_query_api.html">
+     Loki Query API
     </a>
    </li>
    <li class="toctree-l2">
@@ -473,8 +508,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../ocs/README.html">
-   OpenShift Container Storage
+  <a class="reference internal" href="../odf/README.html">
+   OpenShift Data Foundation
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
   <label for="toctree-checkbox-12">
@@ -483,18 +518,18 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ocs/buckets-external-access.html">
+    <a class="reference internal" href="../odf/buckets-external-access.html">
      Accessing buckets from outside the cluster
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ocs/claiming_object_store.html">
+    <a class="reference internal" href="../odf/claiming_object_store.html">
      Claiming S3-compatible object store buckets
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ocs/runbook.html">
-     OpenShift Container Storage (OCS) Runbook
+    <a class="reference internal" href="../odf/runbook.html">
+     OpenShift Data Foundation (ODF) Runbook
     </a>
    </li>
   </ul>
@@ -555,6 +590,11 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../odh/seldon/README.html">
+     Seldon Operator
+    </a>
    </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../odh/superset/README.html">
@@ -873,7 +913,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/operate-first/apps/issues/new?title=Issue%20on%20page%20%2Fcontent/vault_eso/add_external_secrets_to_ns.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/operate-first/apps/issues/new?title=Issue%20on%20page%20%2Fcontent/kubeval/README.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -901,7 +941,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/content/vault_eso/add_external_secrets_to_ns.md"
+        <a href="../../_sources/content/kubeval/README.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -961,38 +1001,9 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pre-requisites">
-   Pre-requisites
+  <a class="reference internal nav-link" href="#usage">
+   Usage
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#steps">
-   Steps
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#enable-namespace-to-fetch-secrets-from-vault">
-     1. Enable namespace to fetch secrets from vault
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#permit-role-to-access-namespace">
-       Permit role to access namespace
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#add-store-and-sa-to-namespace">
-       Add Store and SA to namespace
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-external-secret">
-     2. Create External Secret
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -1003,7 +1014,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Add External Secrets to a namespace</h1>
+                <h1>Kubeval validation</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -1014,38 +1025,9 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pre-requisites">
-   Pre-requisites
+  <a class="reference internal nav-link" href="#usage">
+   Usage
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#steps">
-   Steps
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#enable-namespace-to-fetch-secrets-from-vault">
-     1. Enable namespace to fetch secrets from vault
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#permit-role-to-access-namespace">
-       Permit role to access namespace
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#add-store-and-sa-to-namespace">
-       Add Store and SA to namespace
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-external-secret">
-     2. Create External Secret
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -1057,74 +1039,30 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="add-external-secrets-to-a-namespace">
-<h1>Add External Secrets to a namespace<a class="headerlink" href="#add-external-secrets-to-a-namespace" title="Permalink to this headline">#</a></h1>
-<p>These are instructions on how Operate First administrators can enable Operate First managed namespaces to pull secrets
-from vault. We do not currently offer support for using Operate First Vault instance for the general public.</p>
-<section id="pre-requisites">
-<h2>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Vault access to <a class="reference external" href="https://vault-ui-vault.apps.smaug.na.operate-first.cloud">https://vault-ui-vault.apps.smaug.na.operate-first.cloud</a></p></li>
-<li><p>Cluster should be <a class="reference internal" href="add_cluster_to_eso_and_vault.html"><span class="doc std std-doc">integrated with opf vault instance</span></a></p></li>
-<li><p>Namespace admin access</p></li>
-<li><p>Know your env and cluster (referred to as <code class="docutils literal notranslate"><span class="pre">$env</span></code> and <code class="docutils literal notranslate"><span class="pre">$cluster</span></code> in this doc)</p></li>
-<li><p>Have a working clone of the operate-first/apps repo</p></li>
-</ul>
-</section>
-<section id="steps">
-<h2>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">#</a></h2>
-<p>There are 2 steps:</p>
-<ol class="simple">
-<li><p>Enable namespace to fetch secrets from vault</p></li>
-<li><p>Add external secrets</p></li>
-</ol>
-<p>The first step only needs to be done once per namespace.</p>
-<section id="enable-namespace-to-fetch-secrets-from-vault">
-<h3>1. Enable namespace to fetch secrets from vault<a class="headerlink" href="#enable-namespace-to-fetch-secrets-from-vault" title="Permalink to this headline">#</a></h3>
-<p>These steps need to be followed only once per namespace:</p>
-<section id="permit-role-to-access-namespace">
-<h4>Permit role to access namespace<a class="headerlink" href="#permit-role-to-access-namespace" title="Permalink to this headline">#</a></h4>
-<p>Navigate to vault: <a class="reference external" href="https://vault-ui-vault.apps.smaug.na.operate-first.cloud/ui/vault/access">https://vault-ui-vault.apps.smaug.na.operate-first.cloud/ui/vault/access</a></p>
-<p>Click this cluster’s <em>Auth Method</em>, example for MOC/Smaug, click <code class="docutils literal notranslate"><span class="pre">smaug-k8s</span></code>.</p>
-<p>Find the role <code class="docutils literal notranslate"><span class="pre">${env}-ops</span></code>, for example for Smaug/Infra/Curator clusters this is <code class="docutils literal notranslate"><span class="pre">moc-ops</span></code>, for OSC-Cl1/OSC-Cl2 clusters
-this is <code class="docutils literal notranslate"><span class="pre">osc-ops</span></code>. Click it.</p>
-<p>Click <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">Role</span></code>.</p>
-<p>Scroll to <code class="docutils literal notranslate"><span class="pre">Bound</span> <span class="pre">service</span> <span class="pre">account</span> <span class="pre">namespaces</span></code>.</p>
-<p>Enter your namespace you would like to integrate with vault.</p>
-</section>
-<section id="add-store-and-sa-to-namespace">
-<h4>Add Store and SA to namespace<a class="headerlink" href="#add-store-and-sa-to-namespace" title="Permalink to this headline">#</a></h4>
-<p>Navigate to <code class="docutils literal notranslate"><span class="pre">apps/cluster-scope/overlays/prod/${env}/${cluster}/secret-mgmt</span></code> and create a new directory named after
-your namespace. In this directory add <code class="docutils literal notranslate"><span class="pre">kustomization.yaml</span></code>:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kustomize.config.k8s.io/v1beta1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Kustomization</span><span class="w"></span>
-<span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${namespace}</span><span class="w">  </span><span class="c1"># replace with your namespace</span><span class="w"></span>
-<span class="nt">resources</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../base</span><span class="w"></span>
-</pre></div>
-</div>
-<p>Then include this directory in  <code class="docutils literal notranslate"><span class="pre">apps/cluster-scope/overlays/prod/${env}/${cluster}/secret-mgmt/kustomization.yaml</span></code>.</p>
-<p>Commit your changes and make a PR.</p>
-</section>
-</section>
-<section id="create-external-secret">
-<h3>2. Create External Secret<a class="headerlink" href="#create-external-secret" title="Permalink to this headline">#</a></h3>
-<p>Refer to <a class="reference external" href="https://external-secrets.io/v0.5.6/provider-hashicorp-vault/">ESO Vault Docs</a> on how to create your secret.</p>
-<p>Be sure to reference the store we have created above in your secret:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external-secrets.io/v1beta1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExternalSecret</span><span class="w"></span>
+  <section class="tex2jax_ignore mathjax_ignore" id="kubeval-validation">
+<h1>Kubeval validation<a class="headerlink" href="#kubeval-validation" title="Permalink to this headline">#</a></h1>
+<p>As a part of our CI pipelines in <code class="docutils literal notranslate"><span class="pre">apps</span></code> repository we are using kubeval to validate our schemas. Kubeval checks validity of the CRDs against the schemas stored in schema-store repository. If there are any errors, it is reported. This approach will check for api errors that can sneak through the <code class="docutils literal notranslate"><span class="pre">kustomize</span> <span class="pre">build</span></code> command. For example in following manifest <code class="docutils literal notranslate"><span class="pre">spec.port.targetPort</span></code> is not valid:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">route.openshift.io/v1</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Route</span><span class="w"></span>
 <span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kafdrop-route</span><span class="w"></span>
 <span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">secretStoreRef</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opf-vault-store</span><span class="w"> </span><span class="c1"># should match secret store name specified above</span><span class="w"></span>
-<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SecretStore</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># Add the rest of your secret templating/spec details here</span><span class="w"></span>
-<span class="w">  </span><span class="c1"># ...</span><span class="w"></span>
+<span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">targetPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span><span class="w"></span>
+<span class="w">  </span><span class="nt">to</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Service</span><span class="w"></span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kafdrop</span><span class="w"></span>
 </pre></div>
 </div>
+<p>This manifest will be properly build using <code class="docutils literal notranslate"><span class="pre">kustomize</span> <span class="pre">build</span></code> but <code class="docutils literal notranslate"><span class="pre">kubeval</span></code> will be able to catch this issue and report it back.</p>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">#</a></h2>
+<p>We can use kubeval on manifests which are either stored in files or we can input manifests from stdin. This is useful in our case, because we can pipe output from <code class="docutils literal notranslate"><span class="pre">kustomize</span> <span class="pre">build</span></code> to kubeval and check if manifests are correct.</p>
+<p>By default <code class="docutils literal notranslate"><span class="pre">kubeval</span></code> uses default schemas which can be found <a class="reference external" href="https://kubernetesjsonschema.dev">here</a>. This is not ideal in our case because we have many CRDs which do not have schemas in default repository. For this reason we are generating our own schemas and using them in kubeval (more about how we are generating and updating schemas can be found <a class="reference external" href="https://www.operate-first.cloud/apps/content/kubeval/updating_schema_store.html">here</a> and script used for generating schemas can be found <a class="reference external" href="https://github.com/operate-first/toolbox/blob/master/scripts/test-kubeval-validation">here</a>). To use generated schemas we are using <code class="docutils literal notranslate"><span class="pre">--schema-location</span></code> option.</p>
+<p>We are also using <code class="docutils literal notranslate"><span class="pre">--strict</span></code> option which allows no additional properties in schema. Last option we specify is <code class="docutils literal notranslate"><span class="pre">--skip-kinds</span></code> which allows us to skip validation of CRDs which don’t have valid schemas.</p>
 </section>
-</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1140,7 +1078,7 @@ your namespace. In this directory add <code class="docutils literal notranslate"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./content/vault_eso"
+            path: "./content/kubeval"
         },
         predefinedOutput: true
     }
@@ -1154,17 +1092,17 @@ your namespace. In this directory add <code class="docutils literal notranslate"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="add_cluster_to_eso_and_vault.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../kafka/runbook.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Enable Cluster to use External Secrets with Vault</p>
+            <p class="prev-next-title">Kafka Runbook</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="add_eso_to_cluster.html" title="next page">
+    <a class='right-next' id="next-link" href="updating_schema_store.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Add External Secrets Operator to an OPF cluster</p>
+        <p class="prev-next-title">Updating schemas in schema store</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
